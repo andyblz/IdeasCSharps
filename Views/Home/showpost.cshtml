@@ -1,0 +1,30 @@
+<style>
+   table,th,td{
+       border: 3px solid black;
+   }
+</style>
+
+<a href="/UserDashboard">Home</a>
+<a href="/logout">Logout</a>
+
+<p>@ViewBag.ShowPost.PostCreater.Alias says: @ViewBag.ShowPost.Massage</p>
+
+
+
+people who liked this post:
+
+<table>
+    <tr>
+        <th> Alias</th>
+        <th>Name</th>
+    </tr>
+    @{
+        foreach(var user in @ViewBag.ShowPost.PostLikedByUser)
+        {
+            <tr>
+                <td>@user.User.Alias</td>
+                <td>@user.User.Name</td>
+            </tr>
+        }
+    }
+</table> 

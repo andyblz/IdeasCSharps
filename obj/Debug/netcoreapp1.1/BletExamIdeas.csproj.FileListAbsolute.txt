@@ -1,0 +1,8 @@
+C:\Users\BLZ\Desktop\BletExamIdeas\bin\Debug\netcoreapp1.1\BletExamIdeas.deps.json
+C:\Users\BLZ\Desktop\BletExamIdeas\bin\Debug\netcoreapp1.1\BletExamIdeas.runtimeconfig.json
+C:\Users\BLZ\Desktop\BletExamIdeas\bin\Debug\netcoreapp1.1\BletExamIdeas.runtimeconfig.dev.json
+C:\Users\BLZ\Desktop\BletExamIdeas\bin\Debug\netcoreapp1.1\BletExamIdeas.dll
+C:\Users\BLZ\Desktop\BletExamIdeas\bin\Debug\netcoreapp1.1\BletExamIdeas.pdb
+C:\Users\BLZ\Desktop\BletExamIdeas\obj\Debug\netcoreapp1.1\BletExamIdeas.AssemblyInfo.cs
+C:\Users\BLZ\Desktop\BletExamIdeas\obj\Debug\netcoreapp1.1\BletExamIdeas.dll
+C:\Users\BLZ\Desktop\BletExamIdeas\obj\Debug\netcoreapp1.1\BletExamIdeas.pdb

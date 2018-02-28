@@ -1,0 +1,11 @@
+@model BletExamIdeas.Models.Login
+<h3>Login</h3>
+<form action="loginuser" method="POST">
+    <span asp-validation-for="loginEmail"></span>
+    <label asp-for="loginEmail"></label> <br>
+    <input asp-for="loginEmail"/> <br>
+    <span asp-validation-for="loginPassword"></span>
+    <label asp-for="loginPassword"></label> <br>
+    <input asp-for="loginPassword"/> <br>
+   <input type="submit" value="Submit">
+</form>

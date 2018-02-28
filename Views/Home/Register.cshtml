@@ -1,0 +1,25 @@
+@model BletExamIdeas.Models.RegisterViewModel
+
+
+
+<h3>Register</h3>
+<form action="adduser" method="POST">
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Name"></label><br>
+    <input asp-for="Name"/> <br>
+    <span asp-validation-for="Alias"></span>
+    <label asp-for="Alias"></label><br>
+    <input asp-for="Alias"/> <br>
+    <span asp-validation-for="Email"></span><span>@ViewBag.ExsitEmail</span>
+    <label asp-for="Email"></label><br>
+    <input asp-for="Email"/> <br>
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label><br>
+    <input asp-for="Password"/> <br>
+    <span asp-validation-for="CPassword"></span>
+    <label asp-for="CPassword"></label><br>
+    <input asp-for="CPassword"/> <br>
+    <button type="submit">Submit</button>
+</form>
+
+

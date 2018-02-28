@@ -1,0 +1,32 @@
+@model BletExamIdeas.Models.Post
+<h1>Welcome,@ViewBag.Username</h1>
+
+<a href="/logout">Logout</a>
+
+<form action="/addpost" method="POST">
+<label asp-for="Massage"></label>
+<input asp-for="Massage"/> 
+<button type="submit">Idea!</button>
+
+@{
+    foreach (var message in @ViewBag.Allmessages)
+    {
+    
+        <p><a href="/showuser/@message.PostCreaterId">@message.PostCreater.Alias</a>   Say:@message.Massage</p>
+        
+        <p><a href="/showpost/@message.PostId">@message.PostLikedByUser.Count people</a>  like this.</p>
+
+            if(ViewBag.UserId == @message.PostCreaterId)
+            {
+                    <a href="/delete/@message.PostId">Delete</a>
+                    <a href="/Join/@message.PostId">Like</a>
+            }
+            else
+            {
+                    <a href="/Join/@message.PostId">Like</a>
+            }
+          
+    }
+}
+
+</form>
